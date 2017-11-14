@@ -1,0 +1,11 @@
+eye -2 3 5
+imsize 300 200
+bkgcolor 1 1 1
+updir 0 100 0
+viewdir 2 -3 -5
+fovv 32
+
+mtlcolor .8 .2 .1
+ellipsoid 0 .19 0 .4 .4 2.1
+mtlcolor .8 .4 .15
+ellipsoid 0 -.17 0 .8 .6 2

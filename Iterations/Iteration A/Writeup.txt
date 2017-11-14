@@ -1,0 +1,26 @@
+# Writeup by Caleb Biasco
+# for CSCI 5607, Fall Semester 2016
+
+The images and input files for the examples can be found in the "example images" directory.
+
+view origin:
+Changing this has an obvious effect--it's the coordinates of where the "camera" is in the 3D space, so changing it will move the camera without changing any orientation or image property.
+It also has a non-obvious effect--the closer the camera is to an object, the more obvious the perspective distortion is. You can see this effect in comparing "farsight.ppm" and "nearsight.ppm".
+
+view direction:
+This determines where the "camera" is pointed. The rotation can be around two axes, while the up direction determines the rotation around the third axis.
+Objects that are directly ahead of this direction are "closer" than ones that are to the side. This is a direct effect of the perspective projection; whatever is in the center of the image is slightly closer than the rest of the image (this is more apparent with a larger field of view). This can be seen in "straight.ppm" and "peripheral.ppm".
+
+up direction:
+This vector determines the rotation of the "camera" around the axis that runs in the direction of the view direction. It allows the scene to be captured "upside-down", or sideways, depending on which direction this points.
+So long as this vector doesn't point in the same direction as the view direction, it designates what "up" is for the viewpoint. This is illustrated in "upsidedown.ppm" and "sideways.ppm"
+
+vertical field of view:
+The field of view effects how much of the image particular parts of the scene take up. Effectively, with a wide field of view, the "camera" can see more of what's to the sides, above, and below than with a narrow field of view. Making the field of view larger makes objects closer to the center of the image seem smaller.
+Changing this parameter also emphasizes the perspective distortion. The more the "camera" can see to the sides, the "closer" the outer edge of the image will seem to the viewpoint. This can be seen in "narrow.ppm" and "wide.ppm".
+
+image size:
+The image size simply changes the width and height of the output image. This affects the construction of viewing window, since a larger output has more pixels. As a result, the scene is represented more accurately with a larger image size.
+You can see this difference between the "small.ppm" and "large.ppm" files.
+
+All of the other parameters are straight-forward changes. Background color and material color change the colors of the unoccupied portions of the image and the rendered objects, respectively. Spheres and ellipses generate the described 3D objects in the scene to be rendered by the program if they are visible by the viewpoint and in front of all other objects.

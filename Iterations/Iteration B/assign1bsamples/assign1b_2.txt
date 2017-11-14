@@ -1,0 +1,22 @@
+eye 0 0 2
+viewdir 0 0 -1
+updir 0 1 0
+fovv 45
+imsize 600 600
+bkgcolor 0.2 0.2 0.2
+
+mtlcolor 1 0 0 1 1 1 0.1 1 1 32
+sphere 0 0 -2 1
+
+mtlcolor 0 1 0 1 0 0 0.1 1 1 64
+sphere 0 -0.4 -1 0.5
+
+mtlcolor 0 0 1 0 1 0 0.1 1 1 128
+sphere 0 -0.6 -0.5 0.25
+
+mtlcolor 0.1 0.1 0.1 0 0 0 0 1 1 1
+sphere .0 .4 -.8 0.25
+
+light 4 5 0 1 1 1 1
+light 0 -1 0 0 1 1 1
+

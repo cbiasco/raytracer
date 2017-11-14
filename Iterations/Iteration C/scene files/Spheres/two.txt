@@ -1,0 +1,18 @@
+eye 0 1 -5
+viewdir .5 -.5 2
+updir 0 1 0
+fovv 45
+imsize 400 300
+bkgcolor .8 .4 .3
+
+light -1 0 -2.5 1 1 1 1
+
+mtlcolor 1 0 0 1 1 1 .4 .4 .2 4
+
+texture worldmap.ppm
+
+sphere 0 0 0 1
+
+texture orange.ppm
+
+sphere 2 .75 0 .3

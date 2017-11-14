@@ -1,0 +1,25 @@
+eye 0 4 9
+imsize 400 201
+bkgcolor 1 .7 1
+updir 0 1 -4
+viewdir 0 -4 -9
+fovv 70
+
+mtlcolor 0 0 0
+sphere 0 0 0 1
+mtlcolor 1 0 0
+ellipsoid 4 0 0 .5 2 .5
+mtlcolor 1 1 0
+ellipsoid 2 0 2 .5 2 .5
+mtlcolor 0 1 0
+ellipsoid 0 0 4 .5 2 .5
+mtlcolor 0 1 1
+ellipsoid -2 0 2 .5 2 .5
+mtlcolor 0 0 1 
+ellipsoid -4 0 0 .5 2 .5
+mtlcolor 1 0 1
+ellipsoid -2 0 -2 .5 2 .5
+mtlcolor .5 .5 .5
+ellipsoid 0 0 -4 .5 2 .5
+mtlcolor .8 .8 .8
+ellipsoid 2 0 -2 .5 2 .5
